@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <script src="js/WhoWantToBeMil.js"></script>
+    <link rel="stylesheet" href="css/taskСonstructor1-4.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="MainPage.html" class="iconCard">
+            <img class="icon" src="" alt="">
+        </a>
+        <a class="aOfIco" href="Paragraphs.html" >
+            <div class="buttonCard">
+                <img href="" class="mainImg" src="assets/bookmark.png" alt="">
+            </div>
+        </a>
+        <a class="aOfIco" href="ParagraphConstructor.html">
+            <div href="ParagraphConstructor.html" class="buttonCard">
+                <img class="mainImg1" src="assets/markonlymain.jpg" alt="">
+            </div>
+        </a>
+        <a class="aOfIco" href="tasks.html">
+            <div class="buttonCard">
+                <img href="" class="mainImg3" src="assets/pencil.png" alt="">
+            </div> 
+        </a>
+        <a class="aOfIco" href="taskСonstructorChoice.html">
+            <div class="buttonCard">
+                <img href="" class="mainImg2" src="assets/pencilonlymain.jpg" alt="">
+            </div>
+        </a>
+    </header>
+    <main>
+        <input placeholder="Вопрос" onchange="change()" id="questionForMil" class="questionInput" type="text">
+        <div class="inputContainer">
+            <div class="inputCard">
+                
+                <input placeholder="Ответ 1" onchange="change()" id="input1" class="answerInput" type="text">
+            </div>
+            <div class="inputCard">
+                
+                <input placeholder="Ответ 2" onchange="change()" id="input2" class="answerInput" type="text">
+            </div>
+            <div class="inputCard">
+                
+                <input placeholder="Ответ 3" onchange="change()" id="input3" class="answerInput" type="text">
+            </div>
+            <div class="inputCard">
+                
+                <input placeholder="Ответ 4" onchange="change()" id="input4" class="answerInput" type="text">
+            </div>
+        </div>
+        <div class="divOfCurrentNumber">
+            <p class="stringForChoiceCurrentNumber">
+                Номер правильного ответа:
+            </p>
+            <input placeholder="1-4" onclick="change()" id="numberOfCurrent" type="text">
+        </div>
+        <a id="buttonToNextPage" href="taskСonstructor1-4Question.html">
+            перейти на следующую страницу
+        </a>
+    </main>
+    <footer  class="footer">
+        <p class="p-string">
+            Twitter
+        </p>
+        <p class="p-string">
+            Telegram
+        </p>
+        <p class="p-string">
+            VK
+        </p>
+        <p class="p-string">
+            Facebook
+        </p>
+        <p class="p-string">
+            GitHub
+        </p>
+        <p class="p-string">
+            E-Mail
+        </p>
+    </footer>
+</body>
+</html>

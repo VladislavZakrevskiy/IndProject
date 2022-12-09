@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="stylesheet" href="css/taskСonstructor4-4.css">
+    <script src="js/ConsOfTests.js"></script>
+    <script>
+        function myFunction1() {
+  document.getElementById("myDropdown1").classList.toggle("show");
+}
+function myFunction2() {
+  document.getElementById("myDropdown2").classList.toggle("show");
+}
+function myFunction3() {
+  document.getElementById("myDropdown3").classList.toggle("show");
+}
+function myFunction4() {
+  document.getElementById("myDropdown4").classList.toggle("show");
+}
+function myFunction5() {
+  document.getElementById("myDropdown5").classList.toggle("show");
+}
+// Закрыть раскрывающийся список, если пользователь щелкнет за его пределами.
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="MainPage.html" class="iconCard">
+            <img class="icon" src="" alt="">
+        </a>
+        <a class="aOfIco" href="Paragraphs.html" >
+            <div class="buttonCard">
+                <img href="" class="mainImg" src="assets/bookmark.png" alt="">
+            </div>
+        </a>
+        <a class="aOfIco" href="ParagraphConstructor.html">
+            <div href="ParagraphConstructor.html" class="buttonCard">
+                <img class="mainImg1" src="assets/markonlymain.jpg" alt="">
+            </div>
+        </a>
+        <a class="aOfIco" href="tasks.html">
+            <div class="buttonCard">
+                <img href="" class="mainImg3" src="assets/pencil.png" alt="">
+            </div> 
+        </a>
+        <a class="aOfIco" href="taskСonstructorChoice.html">
+            <div class="buttonCard">
+                <img href="" class="mainImg2" src="assets/pencilonlymain.jpg" alt="">
+            </div>
+        </a>
+    </header>
+    <main>
+<div class="ContainerOfContainers">
+    <div class="AnsQContainer">
+        <p class="NameOfTable">
+            Вопросы
+        </p>
+        <p class="QuestionString" id="firstq"></p>
+        <p class="QuestionString" id="secondq"></p>
+        <p class="QuestionString" id="thirdq"></p>
+        <p class="QuestionString" id="fourthq"></p>
+        <p class="QuestionString" id="fifthq"></p>
+        </div>      
+    
+    <div class="AnsQContainer">
+        <p class="NameOfTable">
+            Ответы
+        </p>
+        <div class="cardAns" >
+            <div class="dropdown">
+                <button id="firstButtonForChoose" onclick="myFunction1()" class="dropbtn">*</button>
+                <div id="myDropdown1" class="dropdown-content">
+                  <a onclick="writeThisNum1(1)">1</a>
+                  <a onclick="writeThisNum1(2)">2</a>
+                  <a onclick="writeThisNum1(3)">3</a>
+                  <a onclick="writeThisNum1(4)">4</a>
+                  <a onclick="writeThisNum1(5)">5</a>
+                </div>
+                </div>
+                <span id="answer1" class="ans">
+                    
+                </span>
+        </div>
+        <div class="cardAns">
+            <div class="dropdown">
+                <button id="secondButtonForChoose" onclick="myFunction2()" class="dropbtn">*</button>
+                <div id="myDropdown2" class="dropdown-content">
+                    <a onclick="writeThisNum2(1)">1</a>
+                    <a onclick="writeThisNum2(2)">2</a>
+                    <a onclick="writeThisNum2(3)">3</a>
+                    <a onclick="writeThisNum2(4)">4</a>
+                    <a onclick="writeThisNum2(5)">5</a>
+                </div>
+                </div>
+                <span id="answer2" class="ans">
+                    
+                </span>
+        </div>
+        <div class="cardAns">
+            <div class="dropdown">
+                <button id="thirdButtonForChoose" onclick="myFunction3()" class="dropbtn">*</button>
+                <div id="myDropdown3" class="dropdown-content">
+                    <a onclick="writeThisNum3(1)">1</a>
+                    <a onclick="writeThisNum3(2)">2</a>
+                    <a onclick="writeThisNum3(3)">3</a>
+                    <a onclick="writeThisNum3(4)">4</a>
+                    <a onclick="writeThisNum3(5)">5</a>
+                </div>
+                </div>
+                <span id="answer3" class="ans">
+                    
+                </span>
+        </div>
+        <div class="cardAns">
+            <div class="dropdown">
+                <button id="fourthButtonForChoose" onclick="myFunction4()" class="dropbtn">*</button>
+                <div id="myDropdown4" class="dropdown-content">
+                    <a onclick="writeThisNum4(1)">1</a>
+                    <a onclick="writeThisNum4(2)">2</a>
+                    <a onclick="writeThisNum4(3)">3</a>
+                    <a onclick="writeThisNum4(4)">4</a>
+                    <a onclick="writeThisNum4(5)">5</a>
+                </div>
+                </div>
+                <span id="answer4" class="ans">
+                    
+                </span>
+        </div>
+        <div class="cardAns">
+            <div class="dropdown">
+                <button id="fifthButtonForChoose" onclick="myFunction5()" class="dropbtn">*</button>
+                <div id="myDropdown5" class="dropdown-content">
+                    <a onclick="writeThisNum5(1)">1</a>
+                    <a onclick="writeThisNum5(2)">2</a>
+                    <a onclick="writeThisNum5(3)">3</a>
+                    <a onclick="writeThisNum5(4)">4</a>
+                    <a onclick="writeThisNum5(5)">5</a>
+                </div>
+                </div>
+                <span id="answer5" class="ans">
+                    
+                </span>
+        </div>
+</div>
+<button class="Check" onclick="getСonclusion(currentAnswerArray,answerArray)">Проверь себя!</button>
+<p id="conclusion"></p>
+    </main>
+    <footer  class="footer">
+        <p class="p-string">
+            Twitter
+        </p>
+        <p class="p-string">
+            Telegram
+        </p>
+        <p class="p-string">
+            VK
+        </p>
+        <p class="p-string">
+            Facebook
+        </p>
+        <p class="p-string">
+            GitHub
+        </p>
+        <p class="p-string">
+            E-Mail
+        </p>
+    </footer>
+</body>
+</html>
